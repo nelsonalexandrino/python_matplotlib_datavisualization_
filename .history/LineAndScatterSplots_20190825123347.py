@@ -16,13 +16,11 @@ pyplot.figure(figsize=(10, 5))
 pyplot.plot(xAxis, AwayTeamGoals, c='red', ls='--',
             label='Away team goals')
 pyplot.title(r'My first plot graph in Python $\frac{20}{19}$')
-pyplot.plot(xAxis, HomeTeamGoals, c='blue', ls=':',
-            label='Home team goals')
+pyplot.plot(xAxis, HomeTeamGoals, c='blue', ls=':')
 
-pyplot.legend(loc='upper left')
 
 pyplot.xlim(0, 145)
-pyplot.ylim(-0.5, 8)
+pyplot.ylim(-0.5, 6)
 pyplot.xlabel('Game number')
 pyplot.ylabel('Goals scored')
 pyplot.xticks([0, 49, 99, 120], ticks, rotation=45)
@@ -30,6 +28,4 @@ pyplot.yticks([3], ['Three Goals'], rotation=90)
 pyplot.text(50, 4, 'Beautiful graphs', fontsize=12, color='green')
 pyplot.annotate('Text 2', xy=(30, 5), xytext=(65, 5),
                 arrowprops=dict(facecolor='red', shrink=25))
-pyplot.savefig('graph.pdf')
-pyplot.savefig('graph')
 pyplot.show()

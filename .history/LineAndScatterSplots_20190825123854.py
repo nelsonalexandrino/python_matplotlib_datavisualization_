@@ -30,6 +30,5 @@ pyplot.yticks([3], ['Three Goals'], rotation=90)
 pyplot.text(50, 4, 'Beautiful graphs', fontsize=12, color='green')
 pyplot.annotate('Text 2', xy=(30, 5), xytext=(65, 5),
                 arrowprops=dict(facecolor='red', shrink=25))
-pyplot.savefig('graph.pdf')
-pyplot.savefig('graph')
+pyplot.savefig()
 pyplot.show()
