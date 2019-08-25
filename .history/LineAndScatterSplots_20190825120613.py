@@ -11,15 +11,13 @@ ticks = ['Game one', 'Game fifty', 'Game 100']
 for i in range(len(HomeTeamGoals)):
     xAxis.append(i)
 
-#pyplot.scatter(xAxis, AwayTeamGoals, c='red', s=5)
-pyplot.plot(xAxis, AwayTeamGoals, c='red', ls='--')
+#pyplot.plot(xAxis, AwayTeamGoals, c='red')
+pyplot.scatter(xAxis, AwayTeamGoals, c='red', s=5)
 pyplot.title(r'My first plot graph in Python $\frac{20}{19}$')
-pyplot.plot(xAxis, HomeTeamGoals, c='blue', ls=':')
-
-
+pyplot.scatter(xAxis, HomeTeamGoals, c='blue', s=5)
 pyplot.xlim(0, 145)
 pyplot.ylim(-0.5, 6)
 pyplot.xlabel('Game number')
 pyplot.ylabel('Goals scored')
-pyplot.xticks([0, 49, 99, 120], ticks)
+pyplot.xticks([0, 49, 99], ticks)
 pyplot.show()
